@@ -1,8 +1,8 @@
 import supertest from "supertest";
 import bcrypt from "bcrypt";
 
-import { web } from "../application/web.js";
-import { logger } from "../application/logging.js";
+import { web } from "../src/application/web.js";
+import { logger } from "../src/application/logging.js";
 import { createTestUser, getTestUser, removeTestUser } from "./test-util.js";
 
 describe('POST /api/users', () => {
