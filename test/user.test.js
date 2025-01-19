@@ -152,8 +152,6 @@ describe('GET /api/users/current', () => {
             .get('/api/users/current')
             .set('Authorization', 'test');
 
-        console.log(JSON.stringify(result, null, 2));
-
         expect(result.status).toBe(200);
         expect(result.body.data.username).toEqual('test');
         expect(result.body.data.name).toEqual('Test user');
